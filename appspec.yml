@@ -22,16 +22,16 @@ hooks:
   BeforeInstall:
     - location: codedeploy/stop_server
       timeout: 300
-      runas: ubuntu
+      runas: root
   ApplicationStop:
     - location: codedeploy/stop_server
       timeout: 300
-      runas: ubuntu
+      runas: root
   AfterInstall:
     - location: codedeploy/start_server
       timeout: 300
-      runas: ubuntu
+      runas: root
   ApplicationStart: 
     - location: codedeploy/start_server
       timeout: 300
-      runas: ubuntu       
+      runas: root       
