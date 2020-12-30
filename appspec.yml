@@ -2,16 +2,16 @@ version: 0.0
 os: linux
 files:
    - source: /
-     destination: /var/www/html/test
+     destination: /var/www/html/tt/public
 permissions:
-   - object: /var/www/html/test
+   - object: /var/www/html/tt/public
      pattern: "**"
      owner: www-data
      group: www-data
      mode: 644
      type:
        - file
-   - object: /var/www/html/test
+   - object: /var/www/html/tt/public
      pattern: "**"
      owner: www-data
      group: www-data
