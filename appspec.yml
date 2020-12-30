@@ -19,19 +19,7 @@ permissions:
      type:
        - directory
 hooks:
-  BeforeInstall:
-    - location: codedeploy/stop_server.sh
-      timeout: 300
-      runas: root
-  ApplicationStop:
-    - location: codedeploy/stop_server.sh
-      timeout: 300
-      runas: root
-  AfterInstall:
-    - location: codedeploy/start_server.sh
-      timeout: 300
-      runas: root
-  ApplicationStart: 
-    - location: codedeploy/start_server.sh
+   ApplicationStart: 
+    - location: codedeploy/restart_server.sh
       timeout: 300
       runas: root       
